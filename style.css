@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 40rem;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #82bd4800;
+}
+.box0 {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 30px 0px #182e009a;
+}
+.box1 {
+    height: 30rem;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+.box1 h1 {
+    font-weight: normal;
+    color: #85A45A;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-family: 'Kanit';
+}
+.icons button {
+    width: 30px;
+    margin: 0 5px 0 5px;
+    padding: 3px 1px 0 1px;
+    border: 1.2px solid #000000a2;
+    background-color: transparent;
+    border-radius: 20px;
+    align-content: center;
+}
+.icons img {
+    width: 20px;
+}
+.icons button {
+    opacity: 80%;
+    transition: 0.5s;
+}
+.icons button:hover {
+    opacity: 60%;
+}
+.or {
+    overflow: hidden;
+    text-align: center;
+    color: #00000080;
+}
+.or:before, .or:after {
+    background-color: #00000080;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+}
+.or:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.or:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+form {
+    border: 0px solid red;
+}
+.box1 #username, .box1 #pwd {
+    width: 14rem;
+    height: 1.3rem;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid #00000080;
+}
+.box1 #username::placeholder,
+.box1 #pwd::placeholder {
+    color: #00000050;
+}
+.label-box span {
+    margin-left: 5px;
+    font-size: 0.7rem;
+    margin-top: 2px;
+}
+.label-box a {
+    color: #85A45A;
+    text-decoration: none;
+}
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox+.label-box {
+    display: inline-flex;
+    align-items: flex-start;
+    border: 0px solid red;
+    text-align: left;
+}
+.checkbox+.label-box::before{
+	width: 16px;
+    height: 16px;
+	border: 1px solid #00000080;
+    border-radius: 5px;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: 100ms;
+}
+.checkbox:not(:disabled):not(:checked)+.label-box:hover::before {
+    border-color: #85A45A;
+}
+.checkbox:checked+label::before {
+    border-color: #8bac1c77;
+    background-color: #85A45A;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+form button {
+    width: 6rem;
+    height: 2rem;
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #85A45A,#a5c479);
+    border: 0;
+    border-radius: 8px;
+    color: #f3f3f3;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px #45550f67;
+    cursor: pointer;
+    transition: 1s;
+}
+form button:hover {
+    color: #ffffff;
+    margin-top: 10px;
+    box-shadow: 0 2px 3px #45550fa1;
+}
+.forgot {
+    text-align: end;
+    font-size: 0.6rem;
+    margin: 7px 15px 0 0;
+}
+.forgot a {
+    color: #85A45A;
+    text-decoration: none;
+}
+.sign-up {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: #00000080;
+}
+.sign-up a {
+    color: #85A45A;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.box2 {
+    background-image: url(kiwi2.png);
+    height: 30rem;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 1rem 1rem 0;
+}
+
+
+
+/*
+.box1 {
+    border: 1px solid #A4D014;
+    height: 30rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    background-color: #a4d01400;
+    box-shadow: 37px 17px 20px -9px #366600;
+}
+.box2 {
+    background-image: url(kiwi.png);
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #99C80C;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 17px 17px 20px -9px #366600;
+}
+#376600
+#8aac1c
+*/
